@@ -49,6 +49,12 @@ blog/
 
 - [Building a GitHub Profile Upgrade Toolkit (With Claude's Help)](posts/2024-github-profile-upgrade-toolkit.md) - November 2024
 
+## Legacy Posts
+
+28 posts migrated from WordPress (2014-2024) are archived in [posts/legacy/](posts/legacy/).
+
+See [posts/legacy/README.md](posts/legacy/README.md) for the complete chronological list.
+
 ## Documentation
 
 - [START-HERE.md](START-HERE.md) - Repository overview and getting started
