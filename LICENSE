@@ -1,0 +1,81 @@
+# License and Copyright Information
+
+This repository contains two types of content with different licensing:
+
+---
+
+## Blog Content - All Rights Reserved
+
+**Copyright © 2024 Ivan Judson. All Rights Reserved.**
+
+The following content is proprietary and protected by copyright law:
+
+- **All blog post text** (files in `posts/` and `drafts/` directories)
+- **All original photography and images** (files in `assets/` directory)
+- **All featured images and graphics** created for blog posts
+- **All original creative works** published or drafted in this repository
+
+### Permitted Use of Blog Content
+
+- **Personal reference and reading** - You may read and reference the content
+- **Linking and attribution** - You may link to published posts with proper attribution
+- **Fair use and quotation** - Brief quotations with proper attribution and links
+
+### Prohibited Use of Blog Content
+
+Without explicit written permission from Ivan Judson, you may NOT:
+- Reproduce, republish, or redistribute blog post content
+- Use, reproduce, or redistribute original photographs or images
+- Create derivative works from the blog content or images
+- Use content for commercial purposes
+- Claim authorship or ownership of any content
+
+### Copyright Notice for Images
+
+All photographs and original images in this repository are:
+- © Ivan Judson, all rights reserved
+- May not be used, reproduced, or distributed without explicit written permission
+- Protected under U.S. and international copyright law
+
+**To request permission:** Contact Ivan Judson via [irjudson.org](https://irjudson.org)
+
+---
+
+## Workflow Documentation and Templates - MIT License
+
+**Copyright (c) 2024 Ivan Judson**
+
+The workflow documentation and templates are open source under the MIT License:
+
+- `workflows/` directory (publishing workflows and documentation)
+- `templates/` directory (post templates and Claude prompts)
+- `.gitignore` and repository configuration files
+- `START-HERE.md`, `PUBLISHING-GUIDE.md`, and setup documentation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Summary
+
+**Blog content (text and images):** © Ivan Judson, All Rights Reserved
+
+**Workflow and templates:** MIT License (free to use and adapt)
+
+For questions about licensing or to request permission to use blog content or images, please contact Ivan Judson.

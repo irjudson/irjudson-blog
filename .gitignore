@@ -1,0 +1,46 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.icloud
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Image working files
+*.psd
+*.ai
+*.sketch
+
+# Node modules (if you add any automation)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs (if you add build processes)
+dist/
+build/
+out/
+
+# WordPress credentials (if stored locally)
+wp-credentials.txt
+credentials.json
+
+# Personal notes not for publishing
+NOTES.md
+TODO.md
+private/
