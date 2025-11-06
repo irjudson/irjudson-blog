@@ -16,27 +16,40 @@ This repository contains blog post source files, publishing workflows, and templ
 
 ```
 blog/
-├── posts/               # Published blog posts (markdown source)
-├── drafts/              # Work-in-progress content
-├── assets/              # Images, featured images, screenshots
-│   ├── featured-images/
-│   └── screenshots/
-├── workflows/           # Publishing workflows and automation docs
-│   ├── blog-post-workflow.md
-│   └── wordpress-publishing.md
-└── templates/           # Post templates and Claude prompts
-    ├── blog-post-template.md
-    ├── claude-prompts.md
-    └── quick-reference.md
+├── posts/
+│   ├── published/          # Published articles with all generated assets
+│   └── legacy/             # Migrated WordPress posts (2014-2025)
+├── drafts/
+│   └── {article-name}/     # One directory per article with all iterations
+├── assets/                 # Images, diagrams, media files
+├── templates/              # Post templates and style guides
+├── workflows/              # Publishing workflow documentation
+└── *.py                    # Publishing automation scripts
 ```
+
+**Key Files:**
+- `publish.py` - Master publishing script (WordPress + LinkedIn)
+- `PUBLISHING.md` - Simple 3-minute publishing workflow
+- `STRUCTURE.md` - Detailed structure documentation
+- `SITE-OPTIMIZATION-TODO.md` - Website improvement checklist
 
 ## The Workflow
 
-1. **Create content** - Use Claude prompts from `templates/` to generate complete blog post packages
-2. **Publish to WordPress** - Follow the checklist in `workflows/wordpress-publishing.md`
-3. **Archive here** - Store the markdown source in this repository for version control
+**ONE command to publish:**
 
-**Time investment:** 10-30 minutes from idea to published post
+```bash
+./publish.py posts/my-post.md -u https://irjudson.org/article-url/
+```
+
+Or in VS Code: **Cmd+Shift+B** → enter URL → done!
+
+**What it does:**
+- ✅ Generates WordPress HTML (paste into WordPress code editor)
+- ✅ Generates LinkedIn text with Unicode bold/italic
+- ✅ Copies LinkedIn to clipboard automatically
+- ✅ All outputs ready in 5 minutes
+
+**See [PUBLISHING.md](PUBLISHING.md) for complete workflow**
 
 ## Site Information
 
@@ -45,9 +58,22 @@ blog/
 - **Theme:** Twenty Twenty-Four (block theme)
 - **Key Plugins:** Yoast SEO, Blog2Social (LinkedIn integration)
 
-## Recent Posts
+## Published Posts
 
-- [Building a GitHub Profile Upgrade Toolkit (With Claude's Help)](posts/2024-github-profile-upgrade-toolkit.md) - November 2024
+1. **[Preparing for Opportunity: A GitHub Profile Toolkit](posts/published/2024-11-preparing-for-opportunity.md)** - November 2024
+   - URL: https://irjudson.org/preparing-for-opportunity-github-profile/
+   - Topics: Career development, GitHub, preparation, serendipity
+   - Seneca's wisdom: "Luck is what happens when preparation meets opportunity"
+
+## Drafts in Progress
+
+- **GitHub Profile Toolkit** - Multiple iterations exploring different angles
+  - See `drafts/github-profile-toolkit/` for evolution
+  - Final version published (see above)
+
+- **Blog Workflow with Claude Code** - Documentation of this workflow's creation
+  - See `drafts/blog-workflow/`
+  - Potential next post
 
 ## Legacy Posts
 
@@ -57,10 +83,15 @@ See [posts/legacy/README.md](posts/legacy/README.md) for the complete chronologi
 
 ## Documentation
 
-- [START-HERE.md](START-HERE.md) - Repository overview and getting started
-- [PUBLISHING-GUIDE.md](PUBLISHING-GUIDE.md) - Step-by-step guide for first post
-- [workflows/blog-post-workflow.md](workflows/blog-post-workflow.md) - Complete workflow documentation
-- [templates/quick-reference.md](templates/quick-reference.md) - Quick lookup guide
+**Essential Guides:**
+- [PUBLISHING.md](PUBLISHING.md) - Simple 3-minute publishing workflow
+- [STRUCTURE.md](STRUCTURE.md) - Repository organization and file structure
+- [SITE-OPTIMIZATION-TODO.md](SITE-OPTIMIZATION-TODO.md) - Website improvement checklist
+
+**Legacy Guides:**
+- [START-HERE.md](START-HERE.md) - Original repository overview
+- [PUBLISHING-GUIDE.md](PUBLISHING-GUIDE.md) - Original publishing guide (replaced by PUBLISHING.md)
+- [workflows/](workflows/) - Original workflow documentation (mostly replaced by publish.py)
 
 ## Copyright and License
 
