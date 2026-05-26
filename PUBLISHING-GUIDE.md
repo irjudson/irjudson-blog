@@ -1,239 +1,91 @@
-# Publishing Guide - GitHub Profile Toolkit Post
+# Publishing Guide
 
-This is the complete guide for publishing the first blog post using our new workflow.
+How to write and publish a post to irjudson.org.
 
-## Post Details
+## The short version
 
-**Title:** Building a GitHub Profile Upgrade Toolkit (With Claude's Help)
+1. Write a `.md` file in `_posts/` named `YYYY-MM-DD-slug.md`
+2. Add Jekyll frontmatter at the top
+3. `git add`, `git commit`, `git push`
+4. GitHub Actions builds and deploys automatically (~2 min)
 
-**Files:**
-- Blog post: `posts/2024-github-profile-upgrade-toolkit.md`
-- LinkedIn version: `posts/2024-github-profile-upgrade-toolkit-linkedin.md`
-- Featured image: `assets/featured-images/github-profile-featured-image.html`
-
----
-
-## Step 1: Create Featured Image
-
-1. Open `assets/featured-images/github-profile-featured-image.html` in your browser
-2. Take a screenshot of the rendered image (1200x630px area)
-3. Save as `github-profile-featured.png`
-4. Keep this file ready for WordPress upload
-
-**Alternative:** Use a screenshot from your GitHub profile or the github-profile-upgrade repository
+That's it. No WordPress, no plugins, no CMS login.
 
 ---
 
-## Step 2: Prepare Screenshots
+## Frontmatter template
 
-The blog post needs these images:
-
-1. **Opening image:**
-   - Your polished GitHub profile screenshot
-   - Or a before/after comparison
-
-2. **Mid-content image:**
-   - Claude Code in action (showing profile setup)
-   - Or screenshot of the repository README
-
-3. **Near-end image:**
-   - Example of a completed profile from the repo
-   - Or your own profile as example
-
-**Quick way to get these:**
-- Visit https://github.com/irjudson
-- Visit https://github.com/irjudson/github-profile-upgrade
-- Take screenshots of relevant sections
-- Save to `assets/screenshots/`
-
+```yaml
 ---
-
-## Step 3: Log into WordPress
-
-1. Navigate to: https://irjudson.org/wp-admin
-2. Log in with your credentials
-3. Go to **Posts → Add New**
-
+title: "Your Post Title"
+date: 2026-05-26 09:00:00 -0600
+categories: [Category1, Category2]
+tags: ["tag1", "tag2", "tag3"]
+image:
+  path: /assets/img/posts/your-post/hero.jpg
+  alt: "Description of the hero image"
 ---
-
-## Step 4: Add Content
-
-1. **Title field:**
-   ```
-   Building a GitHub Profile Upgrade Toolkit (With Claude's Help)
-   ```
-
-2. **Body:**
-   - Open `posts/2024-github-profile-upgrade-toolkit.md`
-   - Copy everything AFTER the metadata section (after the `---`)
-   - Paste into WordPress editor
-   - WordPress will convert to blocks automatically
-
----
-
-## Step 5: Insert Images
-
-Look for these placeholders in the content:
-
-1. **`[Opening: Screenshot of your before/after GitHub profile...]`**
-   - Delete this placeholder text
-   - Click the + button or /image
-   - Upload or select your GitHub profile screenshot
-   - Alt text: "Ivan Judson's optimized GitHub profile"
-
-2. **`[Screenshot: Claude Code in action setting up a profile]`**
-   - Same process
-   - Upload Claude Code or repo screenshot
-   - Alt text: "Claude Code automating GitHub profile setup"
-
-3. **`[Screenshot: Example of completed profile from the repo]`**
-   - Same process
-   - Upload example profile screenshot
-   - Alt text: "Example GitHub profile using the toolkit"
-
----
-
-## Step 6: Set Categories and Tags
-
-**Categories:**
-- ✅ Technology
-- ✅ Professional
-
-**Tags (copy and paste this list):**
-```
-github, career-development, claude, ai-tools, developer-tools, professional-visibility, open-source, automation
 ```
 
+- **categories**: broad topics, title-cased — `[Projects, AI]`, `[Astronomy, Hardware]`
+- **tags**: specific, lowercase — `["python", "seestar", "astrophotography"]`
+- **image**: optional hero image shown at top and in post listing
+- **date timezone**: Three Forks, MT is `-0600` (MDT) or `-0700` (MST)
+
 ---
 
-## Step 7: Configure Yoast SEO
+## Images
 
-Scroll down to the **Yoast SEO** section:
+Put images in `assets/img/posts/your-post-slug/`. Reference them in the post as:
 
-**SEO Title:**
-```
-Building a GitHub Profile Upgrade Toolkit With Claude
-```
-
-**Meta Description:**
-```
-How I built a data-driven toolkit to optimize GitHub profiles in under 5 minutes using Claude automation. From job search insights to open-source resource.
-```
-
-**URL Slug:**
-```
-github-profile-upgrade-toolkit-claude
+```markdown
+![Alt text](/assets/img/posts/your-post-slug/filename.jpg)
+_Optional caption underneath_
 ```
 
-**Focus Keyphrase:** `github profile toolkit`
+Use JPEGs for photos, PNGs for screenshots. Keep photos under 2MB — compress if needed.
 
 ---
 
-## Step 8: Add Featured Image
+## Drafts
 
-1. In the right sidebar, find **Featured Image**
-2. Click **Set featured image**
-3. Upload the `github-profile-featured.png` you created in Step 1
-4. Alt text: `GitHub Profile Upgrade Toolkit with Claude automation`
-5. Click **Set featured image**
+Work in progress goes in `_drafts/` with the same format but no date in the filename:
 
----
-
-## Step 9: LinkedIn Integration
-
-**Important:** This post should be shared to LinkedIn!
-
-1. Find the **Blog2Social** meta box (usually below Yoast SEO)
-2. ✅ **CHECK** the box for "Share to LinkedIn"
-3. Verify it's set to auto-post on publish
-
-**The LinkedIn text is already prepared** in `posts/2024-github-profile-upgrade-toolkit-linkedin.md` if you need it.
-
----
-
-## Step 10: Preview
-
-1. Click **Preview** button (top right)
-2. Review in new tab:
-   - ✅ Title looks good
-   - ✅ Images are placed correctly
-   - ✅ All links work
-   - ✅ Formatting is clean
-   - ✅ No typos or weird formatting
-3. Check mobile view if possible
-
----
-
-## Step 11: Publish!
-
-1. When everything looks good, click **Publish**
-2. Visit the live post to verify: https://irjudson.org/[the-url-slug]/
-3. Check LinkedIn to verify the post was shared
-
----
-
-## Step 12: Archive in Git
-
-After successful publishing:
-
-```bash
-cd /home/irjudson/Projects/irjudson/blog
-git init  # if not already a git repo
-git add .
-git commit -m "Published: Building a GitHub Profile Upgrade Toolkit"
+```
+_drafts/astronomus-follow-up.md
 ```
 
-Update the main README to show this as published.
+To preview drafts locally: `bundle exec jekyll serve --drafts`
+
+Drafts are excluded from the live site until moved to `_posts/`.
 
 ---
 
-## Troubleshooting
+## Writing with Claude
 
-### Featured Image Not Converting from HTML
-- The HTML file needs to be screenshot and saved as PNG
-- Open in browser (Chrome/Firefox)
-- Use screenshot tool or browser dev tools
-- Make sure it's 1200x630 or at least 800x600
+The typical flow:
+1. Write or paste a LinkedIn post, notes, or rough draft
+2. Ask Claude to expand it into a blog post — longer, more informal, with links and embedded images
+3. Review and adjust tone/detail
+4. Drop into `_posts/`, commit, push
 
-### LinkedIn Not Auto-Posting
-- Check Blog2Social plugin settings
-- Verify LinkedIn connection is active
-- Manual backup: Copy from `-linkedin.md` file and post manually
-
-### Images Too Large
-- WordPress prefers images under 500KB
-- Use compression tool if needed
-- Or resize before uploading
-
-### Formatting Looks Wrong
-- WordPress block editor gives granular control
-- Adjust spacing, sizing as needed
-- Preview frequently
+For image-heavy posts, tell Claude which images exist in the project and it'll copy them to `assets/img/posts/` and embed them with captions.
 
 ---
 
-## Post-Publishing Checklist
+## After publishing
 
-Within 24 hours:
-
-- [ ] Verify post is live at irjudson.org
-- [ ] Confirm LinkedIn auto-post worked
-- [ ] Share on other channels if desired (Twitter, etc.)
-- [ ] Monitor for any comments
-- [ ] Fix any discovered issues
-- [ ] Archive in git repository
+- Post is live at `irjudson.org` once the Actions build finishes
+- Check the **Actions** tab at `github.com/irjudson/irjudson-blog` if you want to watch the build
+- Share the URL to LinkedIn/Bluesky/Twitter manually — there's no auto-posting
 
 ---
 
-## Estimated Time
+## Checklist
 
-- Featured image creation: 5 minutes
-- Screenshots: 5 minutes
-- WordPress setup: 10 minutes
-- Review and publish: 5 minutes
-
-**Total: ~25 minutes**
-
----
-
-Good luck! This is your first post with the new workflow. After this one, it'll be even faster.
+- [ ] Frontmatter is valid YAML (check indentation)
+- [ ] Filename is `YYYY-MM-DD-slug.md`
+- [ ] Images are in `assets/img/posts/` and paths match
+- [ ] Links open to the right places
+- [ ] Pushed to `main`
+- [ ] Actions build passed
