@@ -1,5 +1,6 @@
 ---
 title: "Why Every WLED Controller Ships Blind (And What It Takes to Fix That)"
+published: false
 date: 2026-06-09
 categories: [Hardware, Technical]
 tags: ["hardware", "kickstarter", "led", "wled", "electronics", "pcb", "esp32"]
