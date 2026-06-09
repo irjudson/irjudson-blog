@@ -1,0 +1,19 @@
+name: irjudson-blog
+type: jekyll-blog
+description: irjudson.org — personal blog on Jekyll/Chirpy/GitHub Pages
+
+capabilities:
+  publish:
+    description: Move an approved draft from _drafts to _posts with today's date, commit and push
+    entry: scripts/publish.sh
+    args: [slug]
+    output: url
+
+  social:
+    description: Generate platform-optimized social copy for a post
+    entry: scripts/social.py
+    args: [slug, platform]
+    output: text
+    # platform: linkedin | twitter
+    # reads the post from _posts or _drafts, returns ready-to-paste copy
+    # linkedin: Unicode bold, no links in body (link goes in first comment), hashtags at end
