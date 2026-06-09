@@ -3,7 +3,6 @@ title: "Terraprint: From Drone Flight to 3D-Printed Ranch in One Pipeline"
 date: 2026-06-03 09:00:00 -0600
 categories: [Projects, Hardware]
 tags: [drones, photogrammetry, 3d-printing, gis, dji, opendronemap, terrain, agtech, buffalo-jump-forge]
-published: false
 ---
 
 # Terraprint: From Drone Flight to 3D-Printed Ranch in One Pipeline
