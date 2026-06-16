@@ -1,6 +1,6 @@
 ---
 title: "Montana Festival Reminded me of my Purpose"
-date: 2026-06-15
+date: 2026-06-16
 categories: [Ranch, Community]
 tags: ["buffalo jump ranch", "montana", "community", "montana festival", "hope"]
 image:

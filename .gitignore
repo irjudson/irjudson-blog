@@ -44,3 +44,9 @@ credentials.json
 NOTES.md
 TODO.md
 private/
+
+# Jekyll build artifacts
+_site/
+.bundle/
+vendor/
+Gemfile.lock
