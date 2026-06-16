@@ -3,7 +3,6 @@ title: "Montana Festival Reminded me of my Purpose"
 date: 2026-06-15
 categories: [Ranch, Community]
 tags: ["buffalo jump ranch", "montana", "community", "montana festival", "hope"]
-published: false
 image:
   path: /assets/img/posts/montana-festival/RedwingBlackbirdSinging.jpg
   alt: "Redwing Blackbird singing at Buffalo Jump Ranch"
