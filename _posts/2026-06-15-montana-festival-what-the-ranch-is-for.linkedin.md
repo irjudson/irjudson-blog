@@ -19,24 +19,24 @@ mentions:
 
 # PASTE INTO LINKEDIN
 
-Went to Montana Festival last week. Two days in Bozeman, as many conversations as my voice would hold. Exhausting — but I made new friends and something broke free.
+I went to Montana Festival to build business for Buffalo Jump Forge. Two days in Bozeman, 1,000 people, as many conversations as my voice would hold. Exhausting. Made many new friends.
 
-I went to figure out how to build Buffalo Jump Forge. I didn't expect an epiphany.
+And something broke free.
 
-During his talk, George Packer referenced his "Four Americas" piece. The part that stopped me: Just America — the progressive left — is organized around *grievance*. The moral engine is a catalogue of wrongs. I've been trying to name something since 2016, and that was it.
+George Packer mentioned his "Four Americas" piece during his talk. What stopped me: Just America is organized around *grievance*. The moral engine is a catalogue of wrongs. I've been trying to name something since 2016 — that broke it free.
 
-Then Cristina Mormorunni and Kirk Johnson on bison and Indigenous land stewardship. Cristina screened a film she made of Yo-Yo Ma playing Amazing Grace as bison listen. The setting: the Blackfeet Nation — bison returning home to rejoin their brothers and sisters after more than a century.
+Then Cristina Mormorunni and Kirk Johnson on bison and Indigenous land stewardship. Cristina screened a film she made: Yo-Yo Ma playing Amazing Grace as bison listen. The setting was the Blackfeet Nation — bison returning home to rejoin their brothers and sisters after more than a century.
 
-Those two things together finished a thought I'd been carrying for a long time.
+Together those two things finished a thought I'd been working on for a long time.
 
-We're running on the urgency of fear. It mobilizes, but it destroys us too — separates, isolates, paralyzes. We have to move to the urgency of hope. Not just belief the future will be better, but intentional investment in making it better for everyone. Together, in community, as family. E pluribus unum — a many, one.
+We're running on the urgency of fear. It works, up to a point. But it doesn't build anything. And eventually it destroys us — separates, isolates, terrifies, paralyzes.
 
-I am inviting you into this conversation, this shift — from fear to hope.
+We have to move from the urgency of fear to the urgency of hope. I am inviting you into this conversation, this shift.
 
-Buffalo Jump Ranch — 150 acres in the lower Madison Valley, 45 minutes west of Bozeman — is where my wife Ann Snowberger and I are building toward that. We're creating a place to do the work inside ourselves, individually and together. Eventually space for classes, workshops, and groups. The elk coming over the hills from the south, the meadowlarks in the field, the fish in the Madison — they're part of the community, welcoming us back to who we are.
+Buffalo Jump Ranch — 150 acres in the lower Madison Valley, 45 minutes west of Bozeman — is where Ann Snowberger and I are building toward that. The elk coming over the hills from the south, the meadowlarks in the field, the fish in the Madison — they're part of our community. They welcome us back to who we are.
 
-I came back to Montana knowing why we're building Buffalo Jump Ranch. (Links in comments.)
+I went to the festival to figure out how to build Buffalo Jump Forge. I came back knowing why we're building Buffalo Jump Ranch.
 
-None of this happens without Yarrow Kraner, Padden Guy Murphy, and Lumay Wang Murphy and the Last Best Future team creating the conditions for 1,000 people to think together. Thank you for building Montana Festival.
+None of this happens without Yarrow Kraner, Padden Guy Murphy, and Lumay Wang Murphy and the Last Best Future team. Thank you for building Montana Festival. (Links in comments.)
 
 #montana #buffalojumpranch #buffalojumpforge #montanafestival #lastbestfuture #blackfeetnation #community
