@@ -1,27 +1,14 @@
-Here is the complete post. Note: the LinkedIn section's final hashtag line got a tool artifact appended — the clean ending should be:
-
-`#hardware #wled #esp32 #electronics #kickstarter`
-
-Full clean output:
-
 ---
-
-# Why Every WLED Controller Ships Blind (And What It Takes to Fix That)
-
-**Published:** June 2026
-**Categories:** Hardware, Technical
-**Tags:** hardware, kickstarter, led, wled, electronics, pcb, esp32
-**LinkedIn:** YES
-
----
-
-**Copyright © 2026 Ivan Judson. All Rights Reserved.**
-
-## SEO Metadata
-- **SEO Title:** Why WLED Controllers Can't See Per-Channel Current
-- **Meta Description:** Per-channel current monitoring on a WLED controller is harder than it looks. INA219 address limits, shunt sizing, dual power rails, and level shifting, solved.
-- **URL Slug:** wled-controller-per-channel-current-monitoring
-
+title: "Why Every WLED Controller Ships Blind (And What It Takes to Fix That)"
+date: 2026-06-29
+categories: [Hardware, Technical]
+tags: ["hardware", "kickstarter", "led", "wled", "electronics", "pcb", "esp32"]
+series: "Buffalo Jump Forge LED Controller"
+series_part: 2
+image:
+  path: /assets/img/posts/led-controller/ina219-current-sensing-schematic.png
+  alt: "INA219 per-channel current sensing schematic — four channels on a single I2C bus"
+description: "Per-channel current monitoring on a WLED controller is harder than it looks. INA219 address limits, shunt sizing, dual power rails, and level shifting — solved."
 ---
 
 A standard WLED controller writes PWM values to a bank of MOSFETs and hopes for the best. It has no idea how much current any channel is pulling. Short a strip, overload a channel, push a connector into thermal runaway, and the firmware never knows. It keeps writing duty cycles into the dark.
@@ -125,21 +112,3 @@ That is the gap between a hobbyist prototype and a board you can ship, and it is
 Have a use case or a horror story about a strip that browned out or a controller that fried a pin? I want to hear it. Reach out — it shapes what goes on the board.
 
 ---
-
-# LINKEDIN VERSION
-
-Every off-the-shelf WLED controller ships blind. It drives your LED strips and has zero idea how much current any channel is pulling. Short a strip or overload a connector, and the firmware never knows.
-
-Adding per-channel current sensing sounds like a small feature. It is actually four design problems that fight each other:
-
-→ 𝗧𝗵𝗲 𝗜𝗡𝗔𝟮𝟭𝟵 𝗮𝗱𝗱𝗿𝗲𝘀𝘀 𝘀𝗽𝗮𝗰𝗲 𝗿𝘂𝗻𝘀 𝗼𝘂𝘁 𝗮𝘁 𝗳𝗼𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹𝘀. Most layouts route only GND and VS+ on the address pins, so 16 possible addresses collapse to 4. Channel five forces a new chip or a second bus.
-
-→ 𝗧𝘄𝗼 𝘃𝗼𝗹𝘁𝗮𝗴𝗲 𝗱𝗼𝗺𝗮𝗶𝗻𝘀 𝗳𝗶𝗴𝗵𝘁 𝗲𝗮𝗰𝗵 𝗼𝘁𝗵𝗲𝗿. Sensing lives on the high-current LED rail; the bus belongs to the 3.3V ESP32. Power the sensor from 5V and its I2C output kills the ESP32 GPIO without level shifting.
-
-→ 𝗦𝗵𝘂𝗻𝘁 𝘀𝗶𝘇𝗶𝗻𝗴 𝗯𝗶𝘁𝗲𝘀 𝗮𝘁 𝗯𝗼𝘁𝗵 𝗲𝗻𝗱𝘀. Too high and a 5A channel burns 2.5W in one resistor. Too low and noise eats your resolution. 10mΩ is the compromise — but it forces a Kelvin shunt so trace resistance stays out of the reading.
-
-→ 𝗧𝗵𝗲 𝗳𝗶𝘅 𝗶𝘀 𝗮𝗻 𝗶𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗲𝗱 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻, 𝗻𝗼𝘁 𝗳𝗼𝘂𝗿 𝗽𝗮𝗿𝘁𝘀. v1.0 keeps all four INA219s on 3.3V, commits to four channels, and uses Kelvin shunts — so overcurrent detection and thermal protection finally become possible.
-
-Read more → [BLOG_URL]
-
-#hardware #wled #esp32 #electronics #kickstarter
